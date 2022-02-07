@@ -4,4 +4,6 @@ RUN mkdir /ssl
 
 COPY ./ .
 
+RUN rm -r venv
+
 CMD [ "python", "main.py"]
